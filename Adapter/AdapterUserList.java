@@ -76,7 +76,7 @@ public class AdapterUserList extends RecyclerView.Adapter<AdapterUserList.ViewHo
         public void onClick(View v) {
             int position = getAdapterPosition();
             Log.i("position", "" + position);
-            if (position != RecyclerView.NO_POSITION) {
+
                 ModelUserdetails user = arrayUserDetails.get(position);
                 Intent intent = new Intent(context, Userdetails.class);
                 intent.putExtra("Userdata", user);
@@ -85,7 +85,7 @@ public class AdapterUserList extends RecyclerView.Adapter<AdapterUserList.ViewHo
         }
     }
 
-}
+
 
 
 
